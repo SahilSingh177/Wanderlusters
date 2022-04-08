@@ -1,0 +1,44 @@
+/* This is the css page for the navbar of the site */
+@media screen and (max-width: 991px) {
+  .navbar-light .navbar-toggler {
+    width: 15vw;
+    margin-left: 80vw;
+    margin-top: -3vh;
+  }
+  .navbar-dark .navbar-toggler {
+    width: 15vw;
+    margin-left: 80vw;
+    margin-top: -3vh;
+  }
+
+  #navBut,
+  button:not(:disabled) {
+    width: 30vw;
+  }
+}
+
+#aboutNav{
+  width:7.151789rem;
+}
+#contactNav{
+  width:8.4rem;
+}
+
+#btnsNav {
+  align-items: center;
+  justify-content: flex-end;
+  width:60%;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(24, 102, 217);
+}
+
+#lgoutNav {
+  display: none;
+}
+#lgnNav {
+  margin:0px 7px;
+}
+
+

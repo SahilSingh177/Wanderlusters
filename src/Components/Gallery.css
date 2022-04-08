@@ -1,0 +1,113 @@
+/* All this is for the styling, responsiveness and animation in the gallery page */
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+/*For the Main Image at the top*/
+.main3{
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.main3-galleryText{
+    position: absolute;
+    color: white;
+    top: 23%;
+    font-size: 3rem;
+    /* color: silver; */
+    /* color: black; */
+    color: gray;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    Text-align: center;
+}
+.main3-galleryText p{
+    overflow: hidden;
+    border-right: .12em solid silver;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+    typing 3.5s steps(40, end) infinite,
+    blink-caret .75s step-end infinite;
+}
+img{
+    width: 100%;
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: silver; }
+}
+
+.galleryText{
+    position: absolute;
+    color: white;
+    bottom: 5%;
+    left: 5%;
+    color: silver;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&family=Rubik+Glitch&display=swap');
+
+.gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+.galleryCol{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    justify-content: stretch;
+}
+
+
+.galleryCol img{
+    width: 100%;  
+    object-fit: cover;
+    
+}
+
+.gallery .galleryCol img{
+    padding: 1% 1%;
+}
+/*For zoom in when hovered*/
+.gallery img:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    transition-duration: 0.5s;
+    z-index: 1;
+}
+@media screen and (max-width: 1024px){
+    .main3-galleryText{
+        font-size: 1.3rem;
+    }
+    .gallery:hover img:not(:hover) {
+    filter: blur(0px);
+    }
+    .galleryCol {
+        flex: 50%;
+        max-width: 50%;
+    }
+      .galleryCol img{
+          display: flex;
+          flex: 1;
+    }
+}
+@media screen and (max-width: 600px) {
+    .galleryCol {
+      flex: 100%;
+      max-width: 100%;
+    }
+}
