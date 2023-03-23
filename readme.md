@@ -27,18 +27,4 @@ git clone https://github.com/iiitl/Wanderlusters.git
 
 Please note that you must have Node.js installed on your system in order to run this project.
 
-# Contribute
-
-We welcome contributions to the Places Guide website. If you have any suggestions or improvements, please feel free to submit a pull request. 
-
-```
-Fork the repository
-Create your feature branch (git checkout -b feature/new-feature)
-Make the changes in your code editor.
-To preview the changes, we suggest using a local server like Live Server for your code editor.
-Commit your changes (git commit -am 'Added new feature')
-Push to the branch (git push origin feature/new-feature)
-Create a new pull request
-```
-
 Enjoy the experience !!!
